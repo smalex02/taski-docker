@@ -44,7 +44,7 @@ jobs:
         pip install -r ./backend/requirements.txt
     # Запускаем flake8 и django tests
     - name: Test with flake8 and django tests
-          env:
+      env:
         POSTGRES_USER: django_user
         POSTGRES_PASSWORD: django_password
         POSTGRES_DB: django_db
